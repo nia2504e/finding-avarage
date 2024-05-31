@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+float avg(int n)
+{
+	int x, sum = 0;
+		for (int i = 1; i <= n; i++)
+		{
+			sum = sum+i;
+		}
+	return (float)sum / n;
+}
+float main()
+{
+	int a;
+	cout << "enter a number : ";
+	cin >> a;
+	cout << "average is " << avg(a) << endl;
+	return 0;
+}
